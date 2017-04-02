@@ -1,6 +1,9 @@
 # Nibe Downlink
 Get variables from Nibe Uplink
 
+# Requirements
+Your heatpump should be registered in Nibe Uplink. This module fetches data from Nibe Uplink
+
 # Installation
 
     pip install git+https://github.com/yozik04/nibe_downlink.git
