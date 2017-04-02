@@ -1,0 +1,21 @@
+import logging
+
+rootLogger = logging.getLogger()
+rootLogger.addHandler(logging.StreamHandler())
+rootLogger.setLevel(logging.DEBUG)
+
+MQTT_CONF = {
+  'auth': { # This block can be skipped if you do not have auth on your mqtt
+    "username": "mqtt_auth",
+    "password": "mqtt_password"
+  },
+  'hostname': "192.168.0.2", # MQTT IP address or hostname
+  'prefix': '/home_sweet_home/nibe-1255-12'
+}
+
+NIBE_UPLINK_CONF = {
+  'username': "example@example.com",
+  'password': "nibe_uplink_pass",
+  "hpid": "99999", # heat pump id
+  'variables': [47011,48132,47041,40008,40012,40015,40016,43005,43416,43420,43424,43136,43439,43437,40004,40013,10069] # variables you want to fetch
+}
